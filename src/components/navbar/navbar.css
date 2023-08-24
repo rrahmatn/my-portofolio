@@ -1,0 +1,13 @@
+/* Navbar.css */
+
+.navbar-item:hover {
+    background-color: #c5c6c7/0.5;
+    color: #1f2833;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navbar-item.active {
+    background-color: #c5c6c7/0.5;
+    color: #1f2833;
+  }
+  

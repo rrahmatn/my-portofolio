@@ -15,12 +15,12 @@ const Hamburger = () => {
   return (
     <>
       <div className={`w-full text-bold h-fit  text-[#66fcf1] py-2`}>
-        <div className={`text-[48px] p-1 bg-[#1f2833]/[0.8] w-fit h-fit ml-2 rounded-full relative`} onClick={toggleMenu}>
+        <div className={`text-[52px] p-1 bg-[#1f2833]/[0.7] w-fit h-fit ml-2 rounded-full relative`} onClick={toggleMenu}>
           {menuOpen ? <AiOutlineCloseCircle /> : <BiMenu />}
         </div>
 
         <div
-          className={`bg-transparent text-[25px] gap-x-4 text-[#1f2833]/[0.8] p-4 transform ${
+          className={`bg-transparent text-[34px] gap-x-4 text-[#f3f3f3]/[0.8] p-4 transform ${
             menuOpen ? "translate-x-0" : "-translate-x-full"
           } transition-transform ease-in-out duration-300`}
           style={{ backdropFilter: menuOpen ? "blur(5px)" : "none" }}
@@ -29,7 +29,7 @@ const Hamburger = () => {
             <li>
               <Link
                 to="/"
-                className={`hover:bg-[#c5c6c7]/[0.5] ${location.pathname === "/" ? "text-[#66fcf1] active" : ""}`}
+                className={`hover:bg-[#c5c6c7]/[0.5] ${location.pathname === "/" ? "text-[#66fcf1] border-b-2 border-[#66fcf1] active" : ""}`}
               >
                 Home
               </Link>
@@ -37,7 +37,7 @@ const Hamburger = () => {
             <li>
               <Link
                 to="/about"
-                className={`hover:bg-[#c5c6c7]/[0.5] ${location.pathname === "/about" ? "text-[#66fcf1] active" : ""}`}
+                className={`hover:bg-[#c5c6c7]/[0.5] ${location.pathname === "/about" ? "text-[#66fcf1] border-b-2 border-[#66fcf1] active" : ""}`}
               >
                 About
               </Link>
@@ -45,7 +45,7 @@ const Hamburger = () => {
             <li>
               <Link
                 to="/project"
-                className={`hover:bg-[#c5c6c7]/[0.5] ${location.pathname === "/project" ? "text-[#66fcf1] active" : ""}`}
+                className={`hover:bg-[#c5c6c7]/[0.5] ${location.pathname === "/project" ? "text-[#66fcf1] border-b-2 border-[#66fcf1] active" : ""}`}
               >
                 Project
               </Link>
@@ -53,7 +53,7 @@ const Hamburger = () => {
             <li>
               <Link
                 to="/contact"
-                className={`hover:bg-[#c5c6c7]/[0.5] ${location.pathname === "/contact" ? "text-[#66fcf1] active" : ""}`}
+                className={`hover:bg-[#c5c6c7]/[0.5] ${location.pathname === "/contact" ? "text-[#66fcf1] border-b-2 border-[#66fcf1] active" : ""}`}
               >
                 Contact
               </Link>

@@ -1,0 +1,30 @@
+/* Animasi masuk dari kiri */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animasi masuk dari kanan */
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animasi masuk elemen judul */
+  .animate-in-title {
+    animation: slideInFromLeft 1s ease;
+  }
+  
+  /* Animasi masuk elemen gambar */
+  .animate-in-right {
+    animation: slideInFromRight 1s ease;
+  }
+  

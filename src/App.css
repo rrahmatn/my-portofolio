@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
-  font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 .App {
-  width: 100% ;
+  width: 100%;
   height: 100%;
-  background-color: #c5c6c7;
+  background: rgb(11, 12, 16);
+  background: linear-gradient(
+    45deg,
+    rgba(11, 12, 16, 1) 0%,
+    rgba(31, 40, 51, 1) 65%
+  );
+  overflow-x: hidden;
 }
-
-

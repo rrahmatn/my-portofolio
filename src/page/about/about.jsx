@@ -49,16 +49,16 @@ const About = () => {
             <h1 className="text-[36px] font-bold md:text-[48px] animate__animated animate__fadeInRight">
               I come from{" "}
               {suhuCelsius !== null ? suhuCelsius.toFixed(2) + "°C" : ""}{" "}
-              Bandung, Indonesia
+              Bandung, Indonesia.
             </h1>
             <h2 className="text-[24px] md:text-[28px] animate__animated animate__fadeInRight">
               Hello my name is Rizky Rahmat Nugraha , I am currently majoring in educational informatics engineering at
-              the Bandung State Islamic University, Sunan Gunung Djati
+              the Bandung State Islamic University, Sunan Gunung Djati.
             </h2>
             <br />
             <h3 className="text-[24px] md:text-[28px] animate__animated animate__fadeInRight">
               I really love this field, because several people helped me to know
-              how beautiful this front end developer field is
+              how beautiful this front end developer field is.
             </h3>
             <Link to="/contact" className="font-bold flex flex-row items-center hover:text-slate-900 ">for cooperation and work visit the contact page <IoIosArrowDroprightCircle className="text-[24px]"/></Link>
           </div>

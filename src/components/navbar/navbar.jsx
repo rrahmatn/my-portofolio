@@ -10,13 +10,13 @@ const Navbar = () => {
     if (location.pathname === "/") {
       setActivebot("home");
     }
-    if (location.pathname === "/about") {
+    if (location.pathname === "/about" || location.pathname === "/about/") {
       setActivebot("about");
     }
-    if (location.pathname === "/project") {
+    if (location.pathname === "/project" || location.pathname === "/project/") {
       setActivebot("project");
     }
-    if (location.pathname === "/contact") {
+    if (location.pathname === "/contact" || location.pathname === "/contact/") {
       setActivebot("contact");
     }
   }, [location.pathname]);
@@ -43,7 +43,7 @@ const Navbar = () => {
         >
           About
         </Link>
-        <Link
+        <Link to="/project"
           onClick={() => {
             setActivebot("project");
           }}
@@ -51,7 +51,7 @@ const Navbar = () => {
         >
           Project
         </Link>
-        <Link
+        <Link to="/contact"
           onClick={() => {
             setActivebot("contact");
           }}

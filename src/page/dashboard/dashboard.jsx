@@ -71,7 +71,7 @@ const Dashboard = () => {
               img={`album/${jsonDataSmallCard[currentCardIndex].img}`}
             />
           </Link>
-          <Link to="/" className=" md:w-2/3 w-full text-[#f3f3f3] gap-2 text-center text-[24px] font-bold">
+          <Link to="/project" className=" md:w-2/3 w-full text-[#f3f3f3] gap-2 text-center text-[24px] font-bold">
             <h2 className="font-bold text-[32px]">My Project</h2>
             <BigCard
               judul={jsonDataBigCard[currentCardIndex1].judul}

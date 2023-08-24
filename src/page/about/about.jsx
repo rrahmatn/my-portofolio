@@ -43,7 +43,6 @@ const About = () => {
         <div className="w-full mt-8 h-fit flex flex-col md:flex-row items-center md:justify-evenly">
           <ImgCard
             className="animate__animated animate__fadeInLeft"
-            img={"porto/formal.png"}
           />
           <div className="md:w-1/2 w-full h-1/2 px-8 mt-4 md:h-full text-[#f3f3f3] ">
             <h1 className="text-[36px] font-bold md:text-[48px] animate__animated animate__fadeInRight">

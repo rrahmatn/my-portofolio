@@ -1,6 +1,7 @@
 import { React } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Dashboard from "../page/dashboard/dashboard";
+import About from "../page/about/about";
 
 
 const Rout = () => {
@@ -13,6 +14,11 @@ const Rout = () => {
           <Switch>
             <Route path="/" exact>
               <Dashboard />
+            </Route>
+          </Switch>
+          <Switch>
+            <Route path="/about" exact>
+              <About />
             </Route>
           </Switch>
         </div>

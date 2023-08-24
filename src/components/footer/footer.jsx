@@ -1,5 +1,6 @@
 import React from "react";
-import { BsInstagram , BsWhatsapp } from "react-icons/bs";
+import { BsInstagram  } from "react-icons/bs";
+import { FaTelegram  } from "react-icons/fa";
 import {HiOutlineMail} from "react-icons/hi"
 import {VscGithub} from "react-icons/vsc"
  
@@ -27,8 +28,8 @@ const Footer = () => {
             <a href="mailto:rizkyrahmat292@gmail.com" target="_blank" rel="noopener noreferrer">
               <HiOutlineMail />
             </a>
-            <a href="https://api.whatsapp.com/send?phone=083817381943" target="_blank" rel="noopener noreferrer">
-              <BsWhatsapp />
+            <a href="https://t.me/rrahmatn" target="_blank" rel="noopener noreferrer">
+              <FaTelegram />
             </a>
             <a href="https://github.com/rrahmatn" target="_blank" rel="noopener noreferrer">
               <VscGithub />

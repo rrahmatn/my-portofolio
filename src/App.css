@@ -12,8 +12,8 @@
   background: rgb(11, 12, 16);
   background: linear-gradient(
     45deg,
-    rgba(11, 12, 16, 1) 0%,
-    rgba(31, 40, 51, 1) 65%
+    rgba(45, 53, 85, 0.8) 0%,
+    rgb(41, 54, 70) 75%
   );
   overflow-x: hidden;
 }

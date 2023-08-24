@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "HTML" ,
+        "img" : "html.png"
+    },
+    {
+        "name" : "CSS" ,
+        "img" : "css.png"
+    },
+    {
+        "name" : "JavaScript" ,
+        "img" : "js.png"
+    },
+    {
+        "name" : "react" ,
+        "img" : "react.png"
+    },
+    {
+        "name" : "tailwind" ,
+        "img" : "tailwind.png"
+    },
+    {
+        "name" : "bootstrap" ,
+        "img" : "bootstrap.png" 
+    }
+]

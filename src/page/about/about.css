@@ -1,0 +1,28 @@
+/* Import library animate.css */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
+/* Kustomisasi animasi untuk gambar dan teks */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Animasi muncul dari kiri (gambar) */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Animasi muncul dari kanan (teks) */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

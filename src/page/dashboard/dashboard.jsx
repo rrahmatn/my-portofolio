@@ -10,11 +10,12 @@ import jsonDataBigCard from "./../../json/project.json";
 import { Link } from "react-router-dom";
 import BigCard from "../../components/bigcard/bigcard";
 import TicTacToeGame from "../../components/game/game";
+import "animate.css/animate.min.css";
 
 const Dashboard = () => {
   const name = "Hi. I'm Rahmat.";
-  const desc = "A Front-End Web Developer.";
-  const after = "I'm proficient in user interface field.";
+  const desc = "A Front-End Developer.";
+  const after = "I'm proficient in user interface on websites.";
 
   const [animateTitle, setAnimateTitle] = useState(false);
   const [animateImage, setAnimateImage] = useState(false);
@@ -63,16 +64,15 @@ const Dashboard = () => {
             <img src="porto/almet.png" className="" alt="foto saya" />
           </div>
         </div>
-        <div className="w-full h-fit md:px-14 flex flex-col gap-7 md:gap-3 md:flex-row px-6 py-4">
-          <Link to="/" className="md:w-1/3 w-full text-[#f3f3f3] gap-2 text-center text-[24px] font-bold ">
-            <h2 className="border-b-[0.4px] border-indigo-500">This Is Me</h2>
+        <div className="w-full h-fit md:px-14 flex flex-col animate__animated animate__fadeInLeft gap-7 md:gap-3 md:flex-row px-6 py-4">
+          <Link to="/about" className="md:w-1/3 w-full text-[#f3f3f3] gap-2 text-center text-[24px] font-bold ">
+            <h2 className="font-bold text-[32px]">This Is Me</h2>
             <SmallCard
-              judul={jsonDataSmallCard[currentCardIndex].judul}
               img={`album/${jsonDataSmallCard[currentCardIndex].img}`}
             />
           </Link>
           <Link to="/" className=" md:w-2/3 w-full text-[#f3f3f3] gap-2 text-center text-[24px] font-bold">
-            <h2 className="border-b-[0.4px] border-indigo-500">My Project</h2>
+            <h2 className="font-bold text-[32px]">My Project</h2>
             <BigCard
               judul={jsonDataBigCard[currentCardIndex1].judul}
               img={`project/${jsonDataBigCard[currentCardIndex1].img}`}

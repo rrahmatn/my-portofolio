@@ -1,33 +1,36 @@
 /* SmallCard.css */
 
 .big-card {
-    transition: transform 0.4s ease; /* Animasi transformasi saat hover */
-    cursor: pointer;
-  }
-  
-  .big-card:hover {
+  transition: transform 0.4s ease; /* Animasi transformasi saat hover */
+  cursor: pointer;
+}
+
+.big-card:hover {
+  transform: scale(1.02); /* Ukuran sedikit lebih besar saat hover */
+}
+@media (max-width: 768px) {
+  .small-card:hover {
     transform: scale(1.05); /* Ukuran sedikit lebih besar saat hover */
   }
-    
-  
-  .big-card-image {
-    overflow: hidden;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Warna lapisan transparan */
-  }
-  
-  .text {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    text-align: center;
-    color: white;
-  }
-  
+}
+
+.big-card-image {
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Warna lapisan transparan */
+}
+
+.text {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}

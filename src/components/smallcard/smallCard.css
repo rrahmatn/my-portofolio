@@ -6,9 +6,15 @@
 }
 
 .small-card:hover {
-  transform: scale(1.05); /* Ukuran sedikit lebih besar saat hover */
+  transform: scale(1.02); /* Ukuran sedikit lebih besar saat hover */
 }
+
+@media (max-width: 768px) {
+  .small-card:hover {
+    transform: scale(1.05); /* Ukuran sedikit lebih besar saat hover */
+  }
   
+}
 
 .small-card-image {
   width: 100%;

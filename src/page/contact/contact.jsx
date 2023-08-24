@@ -13,12 +13,14 @@ const Contact = () => {
   return (
     <>
       <div className="w-full h-fit flex flex-col pt-28 justify-center">
-        <Tittle
-          tittle={"For Cooperation and Work."}
-          desc={"Contact One Below."}
-          after={"I'm always ready for you"}
-        />
-        <div className=" w-full flex flex-col text-[#f3f3f3] gap-4 items-start pb-7 items-center jusify-center my-10">
+        <div className="w-full h-fit mx-auto animate__animated animate__fadeInRight">
+          <Tittle
+            tittle={"For Cooperation and Work."}
+            desc={"Contact One Below."}
+            after={"I'm always ready for you"}
+          />
+        </div>
+        <div className=" w-full flex flex-col text-[#f3f3f3] gap-4 items-start pb-7 animate__animated animate__fadeInLeft items-center jusify-center my-10">
           <div className="w-full h-fit flex flex-col md:flex-row items-center justify-center gap-5 flex-row text-[100px]">
             <a
               href="https://instagram.com/rrahmatn_"

@@ -6,25 +6,41 @@ import Hamburger from "../../components/hamburger-menu/hamburger-menu";
 import Tittle from "../../components/tittle/tittle";
 import BigCard from "../../components/bigcard/bigcard";
 import projectData from "../../json/project.json";
-import {FaGithubSquare} from "react-icons/fa"
+import { FaGithubSquare } from "react-icons/fa";
 
 const Project = () => {
   return (
     <>
-      <div className="w-full h-fit flex flex-col pt-28 justify-center">
-        <Tittle tittle={"My Project"} />
-        <div className="w-10/12 mx-auto h-fit md:grid md:grid-cols-2 md:mt-28 mt-20 flex flex-col gap-4">
+      <div className="w-full h-fit flex flex-col pt-28 justify-center ">
+        <div className="w-full h-fit mx-auto animate__animated animate__fadeInRight">
+          <Tittle tittle={"My Project"} />
+        </div>
+        <div className="w-10/12 mx-auto h-fit md:grid md:grid-cols-2 md:mt-28 mt-20 flex flex-col gap-4 animate__animated animate__fadeInLeft">
           {projectData.map((item) => {
             return (
-              <a href={`https://${item.url}`} target="_blank" rel="noreferrer" className="w-full h-fit">
+              <a
+                href={`https://${item.url}`}
+                target="_blank"
+                rel="noreferrer"
+                className="w-full h-fit"
+              >
                 <BigCard judul={item.judul} img={`project/${item.img}`} />
               </a>
             );
           })}
         </div>
-        <div className="w-full h-fit flex flex-col items-center my-10 justify-center">
-            <div className="text-[#f3f3f3]  font-bold text-[32px]" >For More Project Visit:</div>
-            <a href="https://github.com/rrahmatn" className="text-[80px] font-bold text-[#f3f3f3]" target="_blank" rel="noreferrer"><FaGithubSquare/></a>
+        <div className="w-full h-fit flex flex-col items-center my-10 justify-center animate__animated animate__fadeInRight">
+          <div className="text-[#f3f3f3]  font-bold text-[32px]">
+            For More Project Visit:
+          </div>
+          <a
+            href="https://github.com/rrahmatn"
+            className="text-[80px] font-bold text-[#f3f3f3]"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithubSquare />
+          </a>
         </div>
         <div className="w-full h-fit ">
           <Footer />

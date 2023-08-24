@@ -6,6 +6,10 @@ import Tittle from "../../components/tittle/tittle";
 import Footer from "../../components/footer/footer";
 import SmallCard from "../../components/smallcard/smallcard";
 import jsonDataSmallCard from "./../../json/album.json";
+import jsonDataBigCard from "./../../json/project.json";
+import { Link } from "react-router-dom";
+import BigCard from "../../components/bigcard/bigcard";
+import TicTacToeGame from "../../components/game/game";
 
 const Dashboard = () => {
   const name = "Hi. I'm Rahmat.";
@@ -15,6 +19,7 @@ const Dashboard = () => {
   const [animateTitle, setAnimateTitle] = useState(false);
   const [animateImage, setAnimateImage] = useState(false);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
+  const [currentCardIndex1, setCurrentCardIndex1] = useState(0);
 
   useEffect(() => {
     setAnimateTitle(true);
@@ -27,6 +32,15 @@ const Dashboard = () => {
         prevIndex === jsonDataSmallCard.length - 1 ? 0 : prevIndex + 1
       );
     }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentCardIndex1((prevIndex) =>
+        prevIndex === jsonDataBigCard.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 6000);
 
     return () => clearInterval(interval);
   }, []);
@@ -50,12 +64,26 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="w-full h-fit md:px-14 flex flex-col gap-7 md:gap-3 md:flex-row px-6 py-4">
-          <SmallCard
-            judul={jsonDataSmallCard[currentCardIndex].judul}
-            img={`album/${jsonDataSmallCard[currentCardIndex].img}`}
-          />
+          <Link to="/" className="md:w-1/3 w-full text-[#f3f3f3] gap-2 text-center text-[24px] font-bold ">
+            <h2 className="border-b-[0.4px] border-indigo-500">This Is Me</h2>
+            <SmallCard
+              judul={jsonDataSmallCard[currentCardIndex].judul}
+              img={`album/${jsonDataSmallCard[currentCardIndex].img}`}
+            />
+          </Link>
+          <Link to="/" className=" md:w-2/3 w-full text-[#f3f3f3] gap-2 text-center text-[24px] font-bold">
+            <h2 className="border-b-[0.4px] border-indigo-500">My Project</h2>
+            <BigCard
+              judul={jsonDataBigCard[currentCardIndex1].judul}
+              img={`project/${jsonDataBigCard[currentCardIndex1].img}`}
+            />
+          </Link>
         </div>
-        <div className="w-full h-fit">
+        <div className="text-center w-full h-fit font-bold text-[24px] md:text-[30px] text-[#f3f3f3]">Wanna play game with me ?</div>
+        <div className="w-full p-2 md:w-2/3 mx-auto h-fit rounded-3xl overflow-hidden">
+          <TicTacToeGame/>
+        </div>
+        <div className="w-full h-fit ">
           <Footer />
         </div>
         <div className="hidden md:flex flex-row w-full top-0 justify-center fixed">

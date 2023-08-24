@@ -1,0 +1,19 @@
+[{
+    "id" : "1" ,
+    "judul" : "Desa Lebakwangi" ,
+    "img" : "desa.png" ,
+    "url" : "desa-lebakwangi.vercel.app"
+},
+{
+    "id" : "2" ,
+    "judul" : "Kuliah Kerja Nyata - 15" ,
+    "img" : "kkn.png",
+    "url" : "kkn15.vercel.app"
+ } ,
+{
+    "id" : "3" ,
+    "judul" : "Gajikuy" ,
+    "img" : "gajikuy.png",
+    "url" : "kkn15.vercel.app"
+ } 
+]

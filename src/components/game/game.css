@@ -1,0 +1,97 @@
+/* game.css */
+.square {
+  background: #fff;
+  border: 2px solid #2196f3;
+  color: #2196f3;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 60px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.square:hover {
+  background: #2196f3;
+  color: #fff;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  margin: 0 auto;
+  perspective: 1000px;
+  perspective-origin: center;
+  transform-style: preserve-3d;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* game.css */
+
+/* Gaya untuk komponen permainan Tic-Tac-Toe */
+.game {
+  width: 80%; /* Ubah ukuran sesuai kebutuhan Anda */
+  height: 80%; /* Ubah ukuran sesuai kebutuhan Anda */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(72, 40, 95, 0.76);
+  justify-content: center;
+  text-align: center;
+  border-radius: 30px;
+  padding: 5px;
+  color: #f3f3f3;
+}
+
+/* Gaya untuk kotak-kotak permainan */
+
+/* Gaya untuk tombol restart */
+.restart-button {
+  padding: 10px 20px; /* Ubah padding sesuai kebutuhan Anda */
+  font-size: 18px;
+  margin: 10px auto;
+  background-color: #007bff; /* Ubah warna latar belakang sesuai kebutuhan Anda */
+  color: #f3f3f3; /* Ubah warna teks sesuai kebutuhan Anda */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ... (gaya CSS lainnya tetap sama) */
+
+/* Animasi untuk memicu warna pada kotak yang menang */
+.winner {
+  background-color: #4caf50;
+  color: #fff;
+  animation: win-animation 1s ease-in-out infinite;
+}
+
+@keyframes win-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

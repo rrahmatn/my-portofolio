@@ -5,7 +5,7 @@ const SmallCard = ({judul , img}) => {
 
   return (
     <>
-      <div className="small-card w-full md:w-1/3 h-[30rem] rounded-3xl overflow-hidden  relative flex flex-col">
+      <div className="small-card w-full shadow-xl h-[30rem] rounded-3xl overflow-hidden  relative flex flex-col">
         <div
           className="small-card-image"
           style={{

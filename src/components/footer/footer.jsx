@@ -7,7 +7,7 @@ const Footer = () => {
   const copyright = "© 2023 Rizky Rahmat. All Rights Reserved";
   return (
     <>
-      <div className="w-full h-fit flex md:flex-row flex-col-reverse text-[#f3f3f3] justify-around items-center border-x-black-500 border-y-[1px]">
+      <div className="w-full mt-5 h-fit flex md:flex-row flex-col-reverse text-[#f3f3f3] justify-around items-center border-x-black-500 border-y-[1px]">
         <div className="md:w-1/4  w-full h-full flex flex-col text-center">
           <p>{copyright}</p>
         </div>
